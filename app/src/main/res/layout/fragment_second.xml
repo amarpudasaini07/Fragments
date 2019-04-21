@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:background="@drawable/ic_launcher_foreground"
+    tools:context="Fragment.SecondFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:id="@+id/etRadius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Radius of Circle"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/btnCalcRad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Area of Circle"/>
+
+
+</LinearLayout>
