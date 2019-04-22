@@ -1,5 +1,6 @@
 package Adapter;
 
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -26,12 +27,15 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         return fragmentList.size();
     }
 
-    public CharSequence getPagerTitle(int position){
-        return fragmentTitle.get(position);
+    @Nullable
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return super.getPageTitle(position);
     }
 
     public void addFragment (Fragment fragment, String title){
         fragmentList.add(fragment);
         fragmentTitle.add(title);
+
     }
 }
